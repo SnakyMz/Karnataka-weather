@@ -27,7 +27,7 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
+- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 # 📖 About the Project <a name="about-project"></a>
@@ -80,7 +80,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd project-folder
-  git clone https://github.com/SnakyMz/Bookstore.git
+  git clone https://github.com/SnakyMz/Weather-News.git
 ```
 
 ### Install
@@ -155,7 +155,7 @@ If you like this project and wish to collaborate. Please contact me.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Thank you Microverse.
+- Original design idea by <a href="https://www.behance.net/sakwadesignstudio">Nelson Sakwa in Behance</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
