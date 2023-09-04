@@ -4,7 +4,7 @@
   <img src="./logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Weather News</b></h3>
+  <h3><b>Karnataka Weather</b></h3>
 
 </div>
 
@@ -32,7 +32,7 @@
 
 # 📖 About the Project <a name="about-project"></a>
 
-**Weather News** is a website that displays a list of cities. And it also displays their respective temperature, weather status,and many more.
+**Karnataka Weather** is a website that displays a list of cities. And it also displays their respective temperature, weather status,and many more.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -80,7 +80,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd project-folder
-  git clone https://github.com/SnakyMz/Weather-News.git
+  git clone https://github.com/SnakyMz/Karnataka-weather.git
 ```
 
 ### Install
