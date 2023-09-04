@@ -32,7 +32,7 @@
 
 # 📖 About the Project <a name="about-project"></a>
 
-**Weather News** is a website that displays a list of cities. And it also displays their respective and temperatures, weather status,and many more.
+**Weather News** is a website that displays a list of cities. And it also displays their respective temperature, weather status,and many more.
 
 ## 🛠 Built With <a name="built-with"></a>
 
