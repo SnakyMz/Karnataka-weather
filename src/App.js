@@ -1,7 +1,14 @@
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import City from './components/City';
+
 function App() {
   return (
     <div className="App">
-      <h1>Weather News</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:cityName" element={<City />} />
+      </Routes>
     </div>
   );
 }
