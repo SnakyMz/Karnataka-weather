@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import bangalore from '../../images/bangalore.jpg';
-import bidar from '../../images/bidar.jpg';
+import bidarr from '../../images/bidarr.jpg';
 import kalburgi from '../../images/kalburgi.jpg';
 import kolar from '../../images/kolar.jpg';
 import mandya from '../../images/mandya.jpg';
@@ -17,7 +17,7 @@ const karnatakaCities = [
     name: 'Bangalore', img: bangalore, lat: 12.9716, lon: 77.5946,
   },
   {
-    name: 'Bidar', img: bidar, lat: 17.9104, lon: 77.5199,
+    name: 'Bidar', img: bidarr, lat: 17.9104, lon: 77.5199,
   },
   {
     name: 'Kalburgi', img: kalburgi, lat: 17.3297, lon: 76.8343,
