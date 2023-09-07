@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import back from '../images/left-arrow.png';
 import Nav from './Nav';
+import '../styles/City.css';
 
 function City() {
   const { cityName } = useParams();
@@ -12,38 +13,41 @@ function City() {
   return (
     <>
       <header>
-        <Link to="/"><img src={back} alt="Back" className="icons" /></Link>
-        <h2>
+        <Link to="/"><img src={back} alt="Back" className="icons links" /></Link>
+        <h4>
           {cityData.name}
           &apos;
           s Weather
-        </h2>
+        </h4>
         <Nav />
       </header>
-      <section id="cityDetail">
-        <h2>Details</h2>
-        <div className="weatherDetails">
-          <h5>
-            Weather:
-            &nbsp;
-            {cityData.weather.weather[0].description}
-          </h5>
-          <h5>
-            Temperature:
-            &nbsp;
-            {cityData.weather.main.temp}
-          </h5>
-          <h5>
-            Humidity:
-            &nbsp;
-            {cityData.weather.main.humidity}
-          </h5>
-          <h5>
-            Wind:
-            &nbsp;
-            {cityData.weather.wind.speed}
-          </h5>
-        </div>
+
+      <section className="cityImg" style={{ backgroundImage: `url(${cityData.img})` }}>
+        <h1>{cityData.name}</h1>
+      </section>
+
+      <section className="weatherDetails">
+        <h5 className="detailHead">Details</h5>
+        <h4>
+          Weather:
+          &nbsp;
+          {cityData.weather.weather[0].description}
+        </h4>
+        <h4>
+          Temperature:
+          &nbsp;
+          {cityData.weather.main.temp}
+        </h4>
+        <h4>
+          Humidity:
+          &nbsp;
+          {cityData.weather.main.humidity}
+        </h4>
+        <h4>
+          Wind:
+          &nbsp;
+          {cityData.weather.wind.speed}
+        </h4>
       </section>
     </>
   );
