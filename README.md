@@ -59,6 +59,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live link](https://karnataka-weather.onrender.com/)
+- [Quick walkthrough](https://www.loom.com/share/cddfb57e96044678847b14745f8fbe04?sid=67c9b2e8-3c9f-4595-9934-16979cf66245)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
