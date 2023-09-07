@@ -60,3 +60,25 @@ header {
 .cityHead {
   padding-top: 2rem;
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 2rem;
+  }
+
+  header {
+    padding: 1%;
+  }
+
+  .icons {
+    width: 40px;
+  }
+
+  .citiesHead {
+    padding: 0.3% 2%;
+  }
+
+  .citiesList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
