@@ -1,12 +1,10 @@
 import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import back from '../images/left-arrow.png';
+import Nav from './Nav';
 
 function City() {
   const { cityName } = useParams();
-
-  const date = new Date();
-  const calender = `${date.getDate()} - ${date.getMonth()} - ${date.getFullYear()}`;
 
   const cities = useSelector((state) => state.karnataka.weather);
   const cityData = cities.find((data) => data.name === cityName);
@@ -14,13 +12,13 @@ function City() {
   return (
     <>
       <header>
-        <Link to="/"><img src={back} alt="Back" /></Link>
+        <Link to="/"><img src={back} alt="Back" className="icons" /></Link>
         <h2>
           {cityData.name}
           &apos;
           s Weather
         </h2>
-        <h4>{calender}</h4>
+        <Nav />
       </header>
       <section id="cityDetail">
         <h2>Details</h2>
