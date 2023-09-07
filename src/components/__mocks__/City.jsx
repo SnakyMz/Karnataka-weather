@@ -1,20 +1,33 @@
-import { useSelector } from 'react-redux';
-import { Link, useParams } from 'react-router-dom';
-import back from '../images/left-arrow.png';
-import microphone from '../images/microphone.png';
-import setting from '../images/settings.png';
-import '../styles/City.css';
+import back from '../../images/left-arrow.png';
+import microphone from '../../images/microphone.png';
+import setting from '../../images/settings.png';
+import bangalore from '../../images/bangalore.jpg';
+import '../../styles/City.css';
 
 function City() {
-  const { cityName } = useParams();
-
-  const cities = useSelector((state) => state.karnataka.weather);
-  const cityData = cities.find((data) => data.name === cityName);
+  const cityData = {
+    name: 'Bangalore',
+    img: bangalore,
+    weather: {
+      main: {
+        temp: 25,
+        humidity: 8000,
+      },
+      weather: [
+        {
+          description: 'Sunny',
+        },
+      ],
+      wind: {
+        speed: 235,
+      },
+    },
+  };
 
   return (
     <>
       <header>
-        <Link to="/"><img src={back} alt="Back" className="icons links" /></Link>
+        <a href="../Home.jsx"><img src={back} alt="Back" className="icons links" /></a>
         <h4>
           {cityData.name}
           &apos;
