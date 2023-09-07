@@ -9,14 +9,14 @@ function City() {
   const { cityName } = useParams();
 
   const cities = useSelector((state) => state.karnataka.weather);
-  const cityData = cities.find((data) => data.name === cityName);
+  const city = cities.find((data) => data.name === cityName);
 
   return (
     <>
       <header>
         <Link to="/"><img src={back} alt="Back" className="icons links" /></Link>
         <h4>
-          {cityData.name}
+          {city.name}
           &apos;
           s Weather
         </h4>
@@ -26,8 +26,8 @@ function City() {
         </div>
       </header>
 
-      <section className="cityImg" style={{ backgroundImage: `url(${cityData.img})` }}>
-        <h1>{cityData.name}</h1>
+      <section className="cityImg" style={{ backgroundImage: `url(${city.img})` }}>
+        <h1>{city.name}</h1>
       </section>
 
       <section className="weatherDetails">
@@ -35,22 +35,22 @@ function City() {
         <h4>
           Weather:
           &nbsp;
-          {cityData.weather.weather[0].description}
+          {city.weather.weather[0].description}
         </h4>
         <h4>
           Temperature:
           &nbsp;
-          {cityData.weather.main.temp}
+          {city.weather.main.temp}
         </h4>
         <h4>
           Humidity:
           &nbsp;
-          {cityData.weather.main.humidity}
+          {city.weather.main.humidity}
         </h4>
         <h4>
           Wind:
           &nbsp;
-          {cityData.weather.wind.speed}
+          {city.weather.wind.speed}
         </h4>
       </section>
     </>
