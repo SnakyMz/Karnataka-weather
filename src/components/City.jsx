@@ -12,12 +12,12 @@ function City() {
   return (
     <>
       <header>
-        <Link to="/"><img src={back} alt="Back" className="icons" /></Link>
-        <h2>
+        <Link to="/"><img src={back} alt="Back" className="icons links" /></Link>
+        <h4>
           {cityData.name}
           &apos;
           s Weather
-        </h2>
+        </h4>
         <Nav />
       </header>
       <section id="cityDetail">

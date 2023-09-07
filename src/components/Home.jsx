@@ -17,26 +17,29 @@ function Home() {
   return (
     <>
       <header>
-        <Link to="/"><img src={reload} alt="Reload" className="icons" /></Link>
-        <h2>Karnataka Weather</h2>
+        <Link to="/"><img src={reload} alt="Reload" className="icons links" /></Link>
+        <h4>Karnataka Weather</h4>
         <Nav />
       </header>
 
+      <section className="titleDiv">
+        <h1>Karnataka</h1>
+        <p>One State, Many Worlds</p>
+      </section>
+
       <section id="cities">
-        <div className="citiesHead">
-          <h1>Karnataka</h1>
-          <p>One State, Many Worlds</p>
+        <h5 className="citiesHead">Cities</h5>
+        <div className="citiesList">
+          {cities.map((city) => (
+            <Link to={`/${city.name}`} key={city.name} className="links">
+              <div className="city" style={{ backgroundImage: `url(${city.img})` }}>
+                <img src={forward} alt="Forward" className="icons" />
+                <h3 className="cityHead">{city.name}</h3>
+                <p>{city.weather.main.temp}</p>
+              </div>
+            </Link>
+          ))}
         </div>
-        <h2>Cities</h2>
-        {cities.map((city) => (
-          <Link to={`/${city.name}`} key={city.name}>
-            <div className="city" style={{ backgroundImage: `url(${city.img})` }}>
-              <img src={forward} alt="Forward" className="icons" />
-              <h3>{city.name}</h3>
-              <p>{city.weather.main.temp}</p>
-            </div>
-          </Link>
-        ))}
       </section>
     </>
   );

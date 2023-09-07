@@ -3,8 +3,60 @@
 body {
   font-family: 'Martel Sans', sans-serif;
   background-color: royalblue;
+  color: white;
 }
 
 header {
   font-family: 'Lato', sans-serif;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+}
+
+.icons {
+  width: 25px;
+}
+
+.setting {
+  margin-left: 1rem;
+}
+
+.titleDiv {
+  text-align: center;
+  background-image: url('../images/karnataka.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: dodgerblue;
+  padding: 3%;
+}
+
+.citiesList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.citiesHead {
+  padding: 1% 4%;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+}
+
+.city {
+  padding: 2% 4%;
+  text-align: right;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: royalblue;
+}
+
+.cityHead {
+  padding-top: 2rem;
 }
