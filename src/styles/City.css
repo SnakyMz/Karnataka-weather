@@ -7,24 +7,30 @@
   background-color: dodgerblue;
   background-blend-mode: multiply;
   text-align: right;
-}
-
-.cityImg h1 {
-  padding: 15% 5% 0 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 5%;
 }
 
 .detailHead {
   padding: 0.5% 3%;
 }
 
-.weatherDetails h3 {
+.weatherDetails h4 {
   padding: 2% 3%;
 }
 
-.weatherDetails h3:nth-child(odd) {
+.weatherDetails h4:nth-child(odd) {
   background-color: dodgerblue;
 }
 
-.weatherDetails h3:nth-child(even) {
+.weatherDetails h4:nth-child(even) {
   background-color: deepskyblue;
+}
+
+@media screen and (min-width: 768px) {
+  .cityImg {
+    min-height: 30rem;
+  }
 }

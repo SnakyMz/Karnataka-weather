@@ -28,26 +28,26 @@ function City() {
 
       <section className="weatherDetails">
         <h5 className="detailHead">Details</h5>
-        <h3>
+        <h4>
           Weather:
           &nbsp;
           {cityData.weather.weather[0].description}
-        </h3>
-        <h3>
+        </h4>
+        <h4>
           Temperature:
           &nbsp;
           {cityData.weather.main.temp}
-        </h3>
-        <h3>
+        </h4>
+        <h4>
           Humidity:
           &nbsp;
           {cityData.weather.main.humidity}
-        </h3>
-        <h3>
+        </h4>
+        <h4>
           Wind:
           &nbsp;
           {cityData.weather.wind.speed}
-        </h3>
+        </h4>
       </section>
     </>
   );
